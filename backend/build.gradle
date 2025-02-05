@@ -24,8 +24,20 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+	// List of dependencies needed for testing
+	// Unit Testing with JUnit 5
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    // Mocking with Mockito
+    testImplementation 'org.mockito:mockito-core:4.3.1'
+    testImplementation 'org.mockito:mockito-junit-jupiter:4.3.1'
+    // Integration Testing with Spring Boot Test
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+test {
+    useJUnitPlatform()
 }
