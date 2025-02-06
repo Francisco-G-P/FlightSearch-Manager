@@ -63,16 +63,16 @@ Download and Installation of:
   
 <ins>Docker Setup:</ins>
 * Running Docker Images:
-  * Backend:
+  * Backend (/backend):
     ```
     docker run -p 8080:8080 flight-search-backend
     ```
-  * Frontend:
+  * Frontend (/frontend):
     ```
     docker run -p 5173:80 flight-search-frontend
     ```
 
-* Running Docker Compose:
+* Running Docker Compose (/FlightSearch-Manager):
   ```
   docker-compose up --build
   ```
