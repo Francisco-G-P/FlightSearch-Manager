@@ -33,3 +33,5 @@ EXPOSE 80
 
 # Run Nginx
 CMD ["nginx", "-g", "daemon off;"]
+
+# To run frontend image use: docker run -p 5173:80 flight-search-frontend
