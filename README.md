@@ -34,11 +34,16 @@ Download and Installation of:
   git clone https://github.com/Francisco-G-P/FlightSearch-Manager.git
   cd FlightSearch-Manager/backend
   ```
-2. Build and run the backend:
+2. Create Amadeus account and add your Amadeus API credentials in:<br/>FlightSearch-Manager/backend/src/main/resources/application.properties
+  ```
+  amadeus.apiKey=YOUR_API_KEY
+  amadeus.apiSecret=YOUR_API_SECRET
+  ```
+3. Build and run the backend:
   ```
   ./gradlew bootRun
   ```
-3. The backend will run on:
+4. The backend will run on:
   ```
   http://localhost:8080
   ```
